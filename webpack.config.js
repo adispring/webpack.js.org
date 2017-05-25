@@ -15,6 +15,11 @@ const commonConfig = {
   resolve: {
     extensions: ['.js', '.jsx', '.scss']
   },
+  resolveLoader: {
+    alias: {
+      'page-loader': path.resolve(cwd, 'loaders/page-loader')
+    }
+  },
   module: {
     rules: [
       {
